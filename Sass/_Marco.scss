@@ -1,0 +1,128 @@
+.body {
+    display: flex;
+    flex-direction: row;
+
+    .left {
+        background-color: #1ECB9F;
+        width: 25%;
+        height: 100vh;
+        //flexbox
+        display: flex;
+        align-items: center;
+    }
+
+    .right {
+        position: absolute;
+        left: 13%;
+        width: 85%;
+        height: 100vh;
+        // Flexbox
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .cuadro {
+            position: relative;
+            width: 25%;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                top: -35px;
+                right: -35px;
+                height: 100%;
+                width: 100%;
+                border: 15px solid #1ECB9F;
+                display: inline-block;
+                z-index: -1;
+            }
+        }
+
+        .content {
+            width: 75%;
+            display: flex;
+            justify-content: center;
+
+            .wrap {
+                width: 85%;
+
+                h1 {
+                    font-size: 3rem;
+                    font-family: 'Anton', sans-serif;
+                }
+
+                h2 {
+                    font-size: 2rem;
+                    font-family: 'Patua One', cursive;
+                }
+
+                p {
+                    font-size: 1.1rem;
+                    font-family: 'Roboto', sans-serif;
+                    color: #525252;
+                    text-align: justify;
+                }
+
+                .about {
+                    margin-top: 12px;
+                    // Flexbox
+                    display: flex;
+                    flex-direction: row;
+
+                    .aboutCol {
+                        width: 50%;
+
+                        span {
+                            font-size: 1.5rem;
+                        }
+
+                        h3 {
+                            font-size: 1.2rem;
+                            margin-bottom: 8px;
+                        }
+                    }
+                }
+
+                .services {
+
+                    .wrap {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+
+                        .servicesCol {
+                            width: 25%;
+                            display: flex;
+                            flex-direction: column;
+                            padding: 10px;
+
+                            img {
+                                display: block;
+                                margin: auto;
+                            }
+
+                            h2 {
+                                font-size: 2rem;
+                                font-family: 'Patua One', cursive;
+                                margin: auto;
+                            }
+
+                            p {
+                                font-size: .9rem;
+                                font-family: 'Roboto', sans-serif;
+                                color: #525252;
+                                text-align: justify;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

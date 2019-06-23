@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Patua+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: #000;
+  font-family: 'Roboto', sans-serif; }
+  * .master {
+    display: flex;
+    flex-direction: column; }
+    * .master .header {
+      z-index: 5000;
+      width: 100%;
+      height: 85px;
+      position: fixed;
+      padding: 0px 80px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      * .master .header img {
+        margin-top: 10px;
+        padding: 10px;
+        width: 100px; }
+      * .master .header nav {
+        width: 65%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center; }
+        * .master .header nav .btnIncio {
+          background-color: #1ECB9F;
+          padding: 10px 30px;
+          color: #fff; }
+          * .master .header nav .btnIncio:hover {
+            background-color: #000; }
+        * .master .header nav a {
+          border-radius: 50px;
+          padding: 10px 30px;
+          transition: .3s;
+          font-family: 'Roboto', sans-serif; }
+          * .master .header nav a:hover {
+            background-color: #1ECB9F;
+            color: #fff;
+            transition: .3s; }
+    * .master .body {
+      display: flex;
+      flex-direction: row; }
+      * .master .body .left {
+        background-color: #1ECB9F;
+        width: 25%;
+        height: 100vh;
+        display: flex;
+        align-items: center; }
+      * .master .body .right {
+        position: absolute;
+        left: 13%;
+        width: 85%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+        * .master .body .right .cuadro {
+          position: relative;
+          width: 25%; }
+          * .master .body .right .cuadro img {
+            max-width: 100%;
+            height: auto; }
+          * .master .body .right .cuadro::before {
+            position: absolute;
+            content: "";
+            top: -35px;
+            right: -35px;
+            height: 100%;
+            width: 100%;
+            border: 15px solid #1ECB9F;
+            display: inline-block;
+            z-index: -1; }
+        * .master .body .right .content {
+          width: 75%;
+          display: flex;
+          justify-content: center; }
+          * .master .body .right .content .wrap {
+            width: 85%; }
+            * .master .body .right .content .wrap h1 {
+              font-size: 3rem;
+              font-family: 'Anton', sans-serif; }
+            * .master .body .right .content .wrap h2 {
+              font-size: 2rem;
+              font-family: 'Patua One', cursive; }
+            * .master .body .right .content .wrap p {
+              font-size: 1.1rem;
+              font-family: 'Roboto', sans-serif;
+              color: #525252;
+              text-align: justify; }
+            * .master .body .right .content .wrap .about {
+              margin-top: 12px;
+              display: flex;
+              flex-direction: row; }
+              * .master .body .right .content .wrap .about .aboutCol {
+                width: 50%; }
+                * .master .body .right .content .wrap .about .aboutCol span {
+                  font-size: 1.5rem; }
+                * .master .body .right .content .wrap .about .aboutCol h3 {
+                  font-size: 1.2rem;
+                  margin-bottom: 8px; }
+            * .master .body .right .content .wrap .services .wrap {
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap; }
+              * .master .body .right .content .wrap .services .wrap .servicesCol {
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+                padding: 10px; }
+                * .master .body .right .content .wrap .services .wrap .servicesCol img {
+                  display: block;
+                  margin: auto; }
+                * .master .body .right .content .wrap .services .wrap .servicesCol h2 {
+                  font-size: 2rem;
+                  font-family: 'Patua One', cursive;
+                  margin: auto; }
+                * .master .body .right .content .wrap .services .wrap .servicesCol p {
+                  font-size: .9rem;
+                  font-family: 'Roboto', sans-serif;
+                  color: #525252;
+                  text-align: justify; }
+
+/*# sourceMappingURL=style.css.map */
